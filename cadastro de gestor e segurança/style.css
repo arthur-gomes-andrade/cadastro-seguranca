@@ -11,6 +11,7 @@ body {
 }
 
 .tela {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     background: #174593;
@@ -129,6 +130,26 @@ button:active {
     font-size: 11px;
     text-align: center;
     font-weight: 700;
+}
+
+.icone-configuracao {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    left: 4px;
+    top: 2px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.icone-logo {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    right: 4px;
+    top: 2px;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 @media (max-width: 500px) {
