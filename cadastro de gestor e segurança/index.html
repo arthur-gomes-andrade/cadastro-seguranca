@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="tela">
+        <section class="cadastro">
+            <h1>Cadastro</h1>
+
+            <form id="formCadastro">
+                <div class="campo">
+                    <input type="email" id="email" placeholder="Email:" required>
+                </div>
+
+                <div class="campo">
+                    <input type="text" id="cpf" placeholder="CPF:" maxlength="14" required>
+                </div>
+
+                <div class="campo">
+                    <input type="tel" id="telefone" placeholder="Telefone:" maxlength="15" required>
+                </div>
+
+                <div class="campo select-container">
+                    <select id="funcao" required>
+                        <option value="" selected disabled>Selecione sua função:</option>
+                        <option value="seguranca">Segurança</option>
+                        <option value="gestor">Gestor</option>
+                    </select>
+
+                    <span class="seta"></span>
+                </div>
+
+                <div class="campo">
+                    <input type="password" id="senha" placeholder="Senha:" required>
+                </div>
+
+                <div class="campo">
+                    <input type="password" id="confirmarSenha" placeholder="Confirmar senha:" required>
+                </div>
+
+                <button type="submit">Fazer cadastro</button>
+
+                <p class="login">
+                    Já possui uma conta?
+                    <a href="#" id="linkLogin">Faça Login</a>
+                </p>
+
+                <p id="mensagem"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
